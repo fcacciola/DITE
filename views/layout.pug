@@ -1,0 +1,26 @@
+include mixins/nav-item.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel='stylesheet', href='/stylesheets/main.css')
+        title
+            | DITE - Distributed Image Transcommunication Experiments
+    body
+        header.container
+            div.row
+                div.col
+                    h1
+                        | DITE - Distributed Image Transcommunication Experiments
+            nav.row
+                div.col
+                    ul.nav.nav-pills
+                        +nav-item('Home','/')
+                        +nav-item('Participant','/participant')
+                        +nav-item('Control','/control')
+                        +nav-item('Monitor', '/monitor')
+        div.container
+            block content

@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  p Participant linked to session #{SessionId}
+  p Row=#{Row} 
+  p Col=#{Col}
+  a(href="/api/participant_picked_white"): button(type="button") WHITE 
+  a(href="/api/participant_picked_black"): button(type="button") BLACK 
